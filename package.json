@@ -1,0 +1,24 @@
+{
+  "name": "the-social-club",
+  "version": "1.0.0",
+  "description": "A social network API using MongoDb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CIJoshTC/The-Social-Club.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CIJoshTC/The-Social-Club/issues"
+  },
+  "homepage": "https://github.com/CIJoshTC/The-Social-Club#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongodb": "^6.0.0",
+    "mongoose": "^7.5.0"
+  }
+}
