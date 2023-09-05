@@ -1,4 +1,4 @@
-const User = require('./models/User');
+const User = require('../Models/User');
 // Implement your controller functions for users here
 const userController = {
     // Controller functions for API routes
@@ -16,6 +16,7 @@ const userController = {
       getUserById: async (req, res) => {
         try {
           const userId = req.params.id;
+          console.log(userId)
           const user = await User.findById(userId).populate('thoughts friends');
           if (!user) {
             return res.status(404).json({ message: 'User not found' });

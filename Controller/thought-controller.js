@@ -1,4 +1,4 @@
-const Thought = require('./models/Thought');
+const Thought = require('../Models/Thought');
 // Implement your controller functions for thoughts here
 const thoughtController = {
     getAllThoughts: async (req, res) => {
@@ -104,8 +104,8 @@ const thoughtController = {
       console.error(error);
       res.status(500).json({ message: 'Error creating reaction' });
     }
-  }
-},
+  },
+
 
     deleteReaction: async (req, res) => {
         try {
@@ -128,6 +128,7 @@ const thoughtController = {
           res.status(500).json({ message: 'Error deleting reaction' });
         }
       }
-    };
+    }
+    ;
     
     module.exports = thoughtController;

@@ -1,3 +1,5 @@
+const mongoose = require('mongoose');
+
 const reactionSchema = new mongoose.Schema({
     reactionId: mongoose.Schema.Types.ObjectId,
     reactionBody: {
